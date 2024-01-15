@@ -1,9 +1,10 @@
 import React from "react";
 
-const MyProfile = () => {
+const MyProfile = ({ params }) => {
+  console.log(params);
   return (
     <div>
-      <h1>My Profile</h1>
+      <h1>My Profile {params.id}</h1>
     </div>
   );
 };
