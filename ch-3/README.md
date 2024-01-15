@@ -6,3 +6,7 @@ Example: (course)
 ## Dynamic Route
 
 [id]
+
+## Catch All Routes
+
+[...posts]
