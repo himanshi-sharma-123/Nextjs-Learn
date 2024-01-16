@@ -24,3 +24,11 @@ Same page will render for both the routes
 localhost:3000/blog
 
 posts to be write in route is optional
+
+## Parallel Routes or Conditional Routes Render
+
+slots:
+
+@left
+
+@right
