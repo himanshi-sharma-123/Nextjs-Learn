@@ -1,6 +1,7 @@
 import LearnClientComponent from "@/components/LearnClientComponent";
 import LearnLink from "@/components/LearnLink";
 import LearnServerComponent from "@/components/LearnServerComponent";
+import LearnUseGlobalCss from "@/components/LearnUseGlobalCss";
 import LearnUseRouter from "@/components/LearnUseRouter";
 import Image from "next/image";
 
@@ -10,7 +11,8 @@ export default function Home() {
       {/* <LearnLink /> */}
       {/* <LearnUseRouter /> */}
       {/* <LearnServerComponent /> */}
-      <LearnClientComponent />
+      {/* <LearnClientComponent /> */}
+      <LearnUseGlobalCss />
       {/* <h1>hello nextjs</h1> */}
     </main>
   );
