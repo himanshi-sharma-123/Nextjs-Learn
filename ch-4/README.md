@@ -34,3 +34,11 @@ Method-2 :
 
 const searchParams = req.nextUrl.searchParams
 console.log(searchParams.get("search"));
+
+## Request Cookies
+
+const cook1 = req.cookies;
+console.log("Cookie1:", cook1);
+
+const cook2 = cookies();
+console.log("Cookie2:", cook2);
