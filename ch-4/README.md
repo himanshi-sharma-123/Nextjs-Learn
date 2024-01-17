@@ -9,3 +9,8 @@ return NextResponse.json({ msg: "Hello Nextjs API" });
 ## Request Object
 
 console.log(req)
+
+## Request Headers
+
+const requestHeaders = new Headers(req.headers);
+console.log(requestHeaders);
