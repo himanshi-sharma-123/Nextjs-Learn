@@ -80,3 +80,35 @@ export const GET = (req) => {
 console.log("Req: ", req);
 return NextResponse.json({ msg: " Success" }, { status: 200 });
 };
+
+## Params
+
+Method 1 : using context
+
+export const GET = (req, context) => {
+// console.log("Req: ", req);
+console.log("Context: ", context);
+console.log("Context.params: ", context.params);
+console.log("Context.params.id: ", context.params.id);
+
+return NextResponse.json({ msg: " Success" }, { status: 200 });
+};
+
+Output:
+
+Context: { params: { id: '3' } }
+Context.params: { id: '3' }
+Context.params.id: 3
+
+Method 2 : using Params
+
+export const GET = (req, { params }) => {
+// console.log("Req: ", req);
+console.log("params.id: ", params.id);
+
+return NextResponse.json({ msg: " Success" }, { status: 200 });
+};
+
+Output:
+
+params.id: 3
