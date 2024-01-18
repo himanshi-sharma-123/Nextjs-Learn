@@ -42,3 +42,32 @@ console.log("Cookie1:", cook1);
 
 const cook2 = cookies();
 console.log("Cookie2:", cook2);
+
+## Post Request
+
+//Request Body
+const res = await req.json();
+console.log("ResJSON", res);
+
+//Form Data
+const formData = await req.formData();
+console.log("Form Data: ", formData);
+
+output:
+
+Form Data: FormData {
+[Symbol(state)]: [
+{ name: 'title', value: 'First Title' },
+{ name: 'body', value: 'First Blog' }
+]
+}
+
+console.log("Form Data: ", formData.get("title"));
+console.log("Form Data: ", formData.get("body"));
+
+output:
+
+Form Data: First Title
+Form Data: First Blog
+
+return NextResponse.json({ msg: "Post Success" });

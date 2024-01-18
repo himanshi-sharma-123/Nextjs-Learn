@@ -20,9 +20,25 @@ export async function GET(req) {
   //Cookies
 
   const cook1 = req.cookies;
-  console.log("Cookie1:", cook1);
+  // console.log("Cookie1:", cook1);
 
   const cook2 = cookies();
-  console.log("Cookie2:", cook2);
+  // console.log("Cookie2:", cook2);
   return NextResponse.json({ msg: "Hello Nextjs API" });
+}
+
+export async function POST(req) {
+  // console.log(req);
+
+  //Request Body
+  // const res = await req.json();
+  // console.log("ResJSON", res);
+
+  //Form Data
+  const formData = await req.formData();
+  console.log("Form Data: ", formData);
+  console.log("Form Data: ", formData.get("title"));
+  console.log("Form Data: ", formData.get("body"));
+
+  return NextResponse.json({ msg: "Post Success" });
 }
