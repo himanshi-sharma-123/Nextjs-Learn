@@ -36,9 +36,9 @@ export async function POST(req) {
 
   //Form Data
   const formData = await req.formData();
-  console.log("Form Data: ", formData);
-  console.log("Form Data: ", formData.get("title"));
-  console.log("Form Data: ", formData.get("body"));
+  // console.log("Form Data: ", formData);
+  // console.log("Form Data: ", formData.get("title"));
+  // console.log("Form Data: ", formData.get("body"));
 
-  return NextResponse.json({ msg: "Post Success" });
+  return NextResponse.json({ msg: "Post Success" }, { status: 201 });
 }
