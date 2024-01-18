@@ -71,3 +71,12 @@ Form Data: First Title
 Form Data: First Blog
 
 return NextResponse.json({ msg: "Post Success" });
+
+## Dynamic API Route
+
+products -> [id] -> route.js
+
+export const GET = (req) => {
+console.log("Req: ", req);
+return NextResponse.json({ msg: " Success" }, { status: 200 });
+};
