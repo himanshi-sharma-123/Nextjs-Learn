@@ -1,5 +1,6 @@
 import connectDB from "@/lib/connectDB";
 import { NextResponse } from "next/server";
+import postModel from "@/model/Post";
 
 export async function GET(req) {
   try {
